@@ -1,0 +1,125 @@
+body {
+    background: rgb(1, 46, 17);
+    color:rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+header{
+    background: black;
+    background-image:url("images/preview_stnzhvouoyvzefxbvibbeaees.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 20px 40px;
+    text-align: center;
+    height: 250px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+header .logo a{
+    background-image: url("images/chocolatte3.jpeg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    position:relative;
+    top:-15px;
+    display:inline-block;
+    text-indent:-9999999px;
+    height: 70px;
+}
+
+header .mobile{
+    display:none;
+}
+
+li a{
+    color:rgb(0, 0, 0);
+}
+div{
+    background: rgb(220, 139, 139);
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+}
+
+li{
+    display:inline-block;
+    margin-right: 20px;
+}
+ /*responsive rules*/
+@media screen and (max-width: 550px) {
+    header .mobile{
+        display:inline-block;
+    }
+
+    header .logo a{
+        top:10px;
+        background-size: 60px ;
+        
+    }
+
+    header{
+        height:100px;
+        background-position: 0px -30px;
+    }
+
+    header .desktop{
+        display:none;
+    }
+}
+
+
+/*images and else*/
+section{
+    color: rgb(74, 74, 74);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+section.image-box{
+    color: rgb(93, 99, 99);
+    margin:auto;
+    text-align: center;
+    text-transform:uppercase;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.image-box img{
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: rgb(88, 88, 88) 0px 0px 15px;
+    border:2px solid rgb(18, 18, 18);
+}
+
+/*responsive rules*/
+/*@media screen and (max-width:700px){
+    .image-box{
+        display: block;
+    }
+}*/
+
+footer{
+    background: black;
+    padding: 20px 20px;
+    color:rgb(129, 158, 158);
+    text-align: center;
+    font-size: 12px;;
+}
+
