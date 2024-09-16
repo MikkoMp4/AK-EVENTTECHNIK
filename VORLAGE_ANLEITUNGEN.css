@@ -10,36 +10,90 @@ a{
     transition: .5s;
 }
 
+h2{
+    padding-inline-start: 01%;
+    font-style:italic;
+    /* color:rgb(66, 76, 121) */
+
+}
+
 a:hover{
     font-size:110%;
 }
 
-h1{
-    text-align:center;
-    color:rgb(201, 72, 72)
+section.kapitel1{
+    font-size:medium;
+    padding-inline-start: 02%;
 }
 
-section{
+section.link-container{
+    text-align: center;
+}
+
+section.image-and-text{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:flex-start;
     padding-bottom: 10px;
+    align-items:top;
 }
 
-footer{
-    background: black;
-    padding: 20px 20px;
-    color:rgb(129, 158, 158);
-    text-align: center;
-    font-size: 12px;;
+.image-container {
+    width: 70%; /* Bild bekommt nur die notwendige Breite */
+    margin-right: 5px; /* Minimaler Abstand zwischen Bild und Text */
 }
+
+.text-container {
+    width: 100%; /* Text nimmt den Platz neben dem Bild ein */
+    text-align: left;
+    margin: 0; /* Keine zusätzliche Polsterung */
+    padding: 0
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #53595f;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    }
+
+.footer-left, .footer-center, .footer-right {
+        flex: 1;
+    }
+    
+.footer-left {
+        text-align: left;
+    }
+    
+.footer-center {
+        text-align: center;
+    }
+    
+.footer-right {
+        text-align: right;
+    }
 
 section div{
     margin:auto;
 }
 
+/*section div.grafik{
+    align-content: center;
+}
+
+figcaption{
+    text-align:match-parent;
+}
+*/
 @media screen and (max-width: 550px) {
     section{
         flex-direction: column;
+    }
+
+    .text-container {
+        text-align: center;
     }
 }
