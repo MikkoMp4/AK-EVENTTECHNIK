@@ -30,7 +30,7 @@ a{
 }
 
 .box {
-    background-color: #53595f;;
+    background: image-set("images/Layer 0.png");
     color: white;
     font-size: 1.5em;
     width: 25%;
