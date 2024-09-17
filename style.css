@@ -50,6 +50,13 @@ a{
     background-position: center;
 }
 
+#Lichtpult{
+    background-image: url("images/lichtpult.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: bottom;
+}
+
 .box {
     /*background-image: url("images/stageboxvorne.png");
     background-repeat: no-repeat;
