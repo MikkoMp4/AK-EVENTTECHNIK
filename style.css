@@ -29,8 +29,33 @@ a{
     padding-bottom: 1%;
 }
 
+#anleitungen{
+    background-image: url("images/stageboxvorne.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+#Techzyklopedie{
+    background-image: url("images/kabeltrommel-40-meter-3g15-930.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+#Pläne{
+    background-image: url("images/bühnenwagen.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
 .box {
-    background: image-set("images/Layer 0.png");
+    /*background-image: url("images/stageboxvorne.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;*/
+    background-color: #53595f;
     color: white;
     font-size: 1.5em;
     width: 25%;
