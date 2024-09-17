@@ -1,0 +1,87 @@
+html {
+    background: white;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.box {
+    background-color: #333399;
+    color: white;
+    font-size: 1.5em;
+    width: 30%;
+    padding: 40px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #4444aa;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #53595f;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-bottom {
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
+    color: #777e85;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,7 +1,9 @@
 body{
     background-color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif
+    /*'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    */
 
 }
 a{
@@ -40,7 +42,7 @@ section.image-and-text{
 
 .image-container {
     width: 70%; /* Bild bekommt nur die notwendige Breite */
-    margin-right: 5px; /* Minimaler Abstand zwischen Bild und Text */
+    margin-right: -10%; /* Minimaler Abstand zwischen Bild und Text */
 }
 
 .text-container {
@@ -50,8 +52,20 @@ section.image-and-text{
     padding: 0
 }
 
+ol.list {
+    line-height: 150%;
+    
+    ::marker {
+        color: red;
+    font-weight: bold;
+    }
+}
+
+
+
 .footer{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     background-color: #53595f;
@@ -75,6 +89,12 @@ section.image-and-text{
 .footer-right {
         text-align: right;
     }
+    .footer-bottom {
+        font-size: small;
+        text-align: center;
+        margin-top: 10px;
+        color:#777e85
+    }
 
 section div{
     margin:auto;
@@ -95,5 +115,8 @@ figcaption{
 
     .text-container {
         text-align: center;
+    }
+    .footer {
+        flex-direction: column;
     }
 }

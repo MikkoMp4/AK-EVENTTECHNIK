@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Die Techzyklopedie </title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <header>
-            <nav>
+        <header class="kopf">
+            <!--<nav>
                 <ul>
                     <li><a href="pages/Techzyklopedie.html">Book</a></li>
                     <li><a href="pages/Anleitungen.html">Anleitungen</a></li>
@@ -17,10 +19,31 @@
                     <li class="desktop"><a href="pages/Pläne.html">Pläne</a></li>
                     <li class="desktop"><a href="pages/Verhaltensregeln.html">Verhaltensregeln</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+            <h1>Die Techzyklopedie</h1>
+            <p class="kopf-text">Willkommen bei der Techzyklopedie bla bla text generelle info</p>
         </header>
-        <footer>
-            Impressum oder so
+        
+        <main>
+            <section class="welcome-section" >
+                <h2>Willkommen bei der Technik!</h2>
+            </section>
+
+            <!-- Boxen mit Links zu anderen HTML-Seiten-->
+             <section class="boxes">
+                <a href="Anleitungen.hmtl" class="box">Anleitungen</a>
+                <a href="Techzyklopedie.hmtl" class="box">Die Techzyklopedie</a>
+                <a href="Pläne.hmtl" class="box">Pläne</a>
+             </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-left">MTG</div>
+            <div class="footer-center">Die Techzyklopedie</div>
+            <div class="footer-right">AK-Eventtechnik</div>
+            <div class="footer-bottom">
+                <p>© 2024 AK-Eventtechnik / MTG</p>
+            </div>
         </footer>
     </body>
 </html>
