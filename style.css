@@ -1,13 +1,13 @@
 
 html{
-    background:  #f5f5f5;
+    background:  #53595f /*#f5f5f5*/;
     color:rgb(0, 0, 0);
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-nav{
+/*nav{
     width: 100%;
     height: 85px;
     background-color: white;
@@ -61,7 +61,7 @@ nav ul li ul li a:hover{
     background-color: #53595f;
     font-size: 110%;
 }
-
+*/
 a{
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -70,11 +70,11 @@ a{
 
 .kopf {
     text-align: center;
-    color: #53595f;
+    /*color: #53595f;*/
 }
 
 .kopf-text {
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 30px;
 }
@@ -88,26 +88,54 @@ a{
 }
 
 #anleitungen{
-    background-image: url("images/stageboxvorne.png");
+    background-image: url("images/HALLE_VORSTELLUNG2.jpg");
     background-repeat: no-repeat;
-    background-size: 135%;
-    background-position: center;
+    background-size: 100%;
+    background-position: 50%  95%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
 
 #Techzyklopedie{
-    background-image: url("images/kabeltrommel-40-meter-3g15-930.png");
+    background-image: url("images/ABBAU.jpg");
     background-repeat: no-repeat;
     background-size: 130%;
-    background-position: center;
+    background-position: 60% 40%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
 
 #Pläne{
-    background-image: url("images/bühnenwagen.png");
+    
+    background-image: url("images/Plan_STOCK.jpeg");
     background-repeat: no-repeat;
-    background-size: 210%;
+    background-size: 110%;
     background-position: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
 
+.overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.text_box {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    opacity: 90%;
+    text-align: center;
+}
 #Lichtpult{
     background-image: url("images/lichtpult.jpg");
     background-repeat: no-repeat;
@@ -121,8 +149,10 @@ a{
     background-size: 100%;
     background-position: center;*/
     background-color: #53595f;
-    color: white;
-    font-size: 1.5em;
+    color: #53595f;
+    font-size: 3em;
+    z-index: 2;
+    font-weight: bold;
     width: 25%;
     padding: 2%;
     margin: 0% auto;
@@ -141,26 +171,35 @@ a{
 }
 
 header{
-    background-image:url("images/Techniklogo.png");
+    background-image:url("images/SCHEINWERFER_SMOKE.jpg");
     /*braucht noch ein anderes foto*/
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    padding: 20px 40px;
+    background-size: cover;
+    background-position: 20% 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 3vh 6.75vh;
+    align-items: center;
+    padding: 0% 2%;
     /*text-align: center;*/
-    height: 100%;
+    height: 30vh;
+    
 }
 
 header h1 {
     font-size: 2.5em;
-    margin: 0;
+    margin-left: 30%;
+    margin-right: 30%;
     padding: 10px 0;
-    background-color: black;
-    opacity:50%;
-    color:white;
-    padding:30px;
+    background-color: rgb(0, 0, 0);
+    opacity:70%;
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    padding:1.5%;
     text-transform: uppercase;
-    margin-top: 20%;
+    margin-top: 0%;
    
 }
 
@@ -169,8 +208,13 @@ header p {
     color: #555;
 }
 
+
 .welcome-section {
     text-align: center;
+    background-image:url(images/LICHTPULT_HAND.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -182,6 +226,8 @@ header p {
     justify-content: space-around;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index:2;
 }
 
 
@@ -190,8 +236,8 @@ header p {
     flex-direction: column;
     justify-content: space-between;
     padding: 10%;
-    background-color: #53595f;
-    color: white;
+    background-color: #e0e0e0;
+    color: #53595f;
     text-align: center;
     padding: 40px 40px;
     border-radius: 10px;
