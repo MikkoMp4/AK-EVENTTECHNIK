@@ -24,6 +24,10 @@ nav ul li{
     position: relative;
 }
 
+nav ul li.active{
+    color:black;
+}
+
 nav ul li a{
     color:#555;
     padding:20px;
@@ -72,6 +76,7 @@ a{
 .kopf-text {
     color: black;
     text-align: center;
+    padding: 30px;
 }
 
 .boxes {
@@ -85,28 +90,28 @@ a{
 #anleitungen{
     background-image: url("images/stageboxvorne.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 135%;
     background-position: center;
 }
 
 #Techzyklopedie{
     background-image: url("images/kabeltrommel-40-meter-3g15-930.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 130%;
     background-position: center;
 }
 
 #Pläne{
     background-image: url("images/bühnenwagen.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 210%;
     background-position: center;
 }
 
 #Lichtpult{
     background-image: url("images/lichtpult.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105%;
     background-position: bottom;
 }
 
