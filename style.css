@@ -6,10 +6,63 @@ html{
     margin: 0;
     padding: 0;
 }
+
+nav{
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+nav ul{
+    float:center;
+}
+
+nav ul li{
+    float:left;
+    list-style:none;
+    position: relative;
+}
+
+nav ul li a{
+    color:#555;
+    padding:20px;
+    display:block;
+}
+
+nav ul li a:hover{
+    background-color:rgb(219, 219, 219);
+    font-size: 110%;
+}
+
+nav ul li ul{
+    display:none;
+    position:absolute;
+    background-color: #777e85;
+    padding:7px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li a{
+    color:white;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+nav ul li ul li a:hover{
+    background-color: #53595f;
+    font-size: 110%;
+}
+
 a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
 
 .kopf {
     text-align: center;
@@ -32,28 +85,28 @@ a{
 #anleitungen{
     background-image: url("images/stageboxvorne.png");
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 100%;
     background-position: center;
 }
 
 #Techzyklopedie{
     background-image: url("images/kabeltrommel-40-meter-3g15-930.png");
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 100%;
     background-position: center;
 }
 
 #Pläne{
     background-image: url("images/bühnenwagen.png");
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 100%;
     background-position: center;
 }
 
 #Lichtpult{
     background-image: url("images/lichtpult.jpg");
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 100%;
     background-position: bottom;
 }
 
