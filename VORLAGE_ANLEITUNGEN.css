@@ -83,7 +83,7 @@ ol.list {
 .footer{
     margin-top: 2%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px;
     background-color: #53595f;
@@ -92,6 +92,8 @@ ol.list {
     padding: 20px 20px;
     }
 
+
+/*
 .footer-left, .footer-center, .footer-right {
         flex: 1;
     }
@@ -113,7 +115,7 @@ ol.list {
         margin-top: 10px;
         color:#777e85
     }
-
+*/
 section div{
     margin:auto;
 }

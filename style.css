@@ -175,7 +175,7 @@ header{
     /*braucht noch ein anderes foto*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 20% 50%;
+    background-position: bottom 60% right;
     display: flex;
     justify-content: center;
     border-radius: 2vh;
@@ -228,28 +228,30 @@ header p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     z-index:2;
+    background-blend-mode: darken;
 }
 
 
-.footer{
+footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 10%;
-    background-color: #e0e0e0;
-    color: #53595f;
+    
+    background-color: #cecece;
+    color: #525252;
     text-align: center;
-    padding: 40px 40px;
+    padding: 10%;
     border-radius: 10px;
     width: 89.75%;
-    margin: auto;
+    margin: 0;
     }
 
-.footer-left, .footer-center, .footer-right {
-        flex: 1;
-    }
-    
-.footer-left {
+footer div p:first-child{
+    color:black;
+}
+
+
+/*.footer-left {
         text-align: left;
     }
     
@@ -265,11 +267,11 @@ header p {
         text-align: center;
         margin-top: 10px;
         color:#777e85
-    }
+    }*/
     @media screen and (max-width: 768px) {
-        .footer {
+        /*.footer {
             flex-direction: column;
-        }
+        }*/
 
         .boxes {
             flex-direction: column;
