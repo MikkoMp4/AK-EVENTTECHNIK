@@ -242,12 +242,14 @@ footer{
     text-align: center;
     padding: 10%;
     border-radius: 10px;
-    width: 89.75%;
-    margin: 0;
+    margin: 10px;
     }
 
 footer div p:first-child{
     color:black;
+}
+footer p{
+    padding-top: 5vh;
 }
 
 
