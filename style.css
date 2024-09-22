@@ -7,11 +7,12 @@ html{
     padding: 0;
 }
 
-/*nav{
+nav{
     width: 100%;
     height: 85px;
-    background-color: white;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5vh;
+    background;
 }
 
 nav ul{
@@ -29,7 +30,7 @@ nav ul li.active{
 }
 
 nav ul li a{
-    color:#555;
+    color:#ffffff;
     padding:20px;
     display:block;
 }
@@ -61,7 +62,7 @@ nav ul li ul li a:hover{
     background-color: #53595f;
     font-size: 110%;
 }
-*/
+
 a{
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -149,7 +150,7 @@ a{
     background-size: 100%;
     background-position: center;*/
     background-color: #53595f;
-    color: #53595f;
+    color: #b7b7b7;
     font-size: 3em;
     z-index: 2;
     font-weight: bold;
