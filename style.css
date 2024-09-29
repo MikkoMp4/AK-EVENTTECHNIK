@@ -12,7 +12,6 @@ nav{
     height: 85px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 5vh;
-    background;
 }
 
 nav ul{
@@ -235,25 +234,26 @@ header p {
 
 footer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    flex-direction:column;
+    justify-content: space-around;
     background-color: #cecece;
-    color: #525252;
+    color: #000000;
     text-align: center;
     padding: 10%;
     border-radius: 10px;
     margin: 10px;
     }
 
-footer div p:first-child{
-    color:black;
-}
-footer p{
-    padding-top: 5vh;
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
 }
 
-
+footer img{
+    max-width: 17px;
+}
 /*.footer-left {
         text-align: left;
     }
@@ -265,12 +265,12 @@ footer p{
 .footer-right {
         text-align: right;
     }
-    .footer-bottom {
+    */.footer-bottom {
         font-size: small;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 5vh;
         color:#777e85
-    }*/
+    }
     @media screen and (max-width: 768px) {
         /*.footer {
             flex-direction: column;
