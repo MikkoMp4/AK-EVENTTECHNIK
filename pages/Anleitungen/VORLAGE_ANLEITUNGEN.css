@@ -92,7 +92,15 @@ ol.list {
     padding: 20px 20px;
     }
 
+footer a{
+    color:white;
+}
 
+footer img{
+    max-width: 17px;
+    padding-right: 5px;
+    
+}
 
 section div{
     margin:auto;

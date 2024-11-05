@@ -35,8 +35,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color:rgb(219, 219, 219);
-    font-size: 110%;
+    background-color:rgb(188, 188, 188);
 }
 
 nav ul li ul{
@@ -53,13 +52,10 @@ nav ul li:hover ul{
 
 nav ul li ul li a{
     color:white;
-    padding: 16px 20px;
-    border-radius: 10px;
 }
 
 nav ul li ul li a:hover{
     background-color: #53595f;
-    font-size: 110%;
 }
 
 a{
@@ -233,27 +229,29 @@ header p {
 
 
 footer{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
+    display: block;
+    box-sizing: border-box;
     background-color: #cecece;
     color: #000000;
-    text-align: center;
-    padding: 10%;
+    text-align: left;
+    padding: 5%;
     border-radius: 10px;
     margin: 10px;
     }
 
 footer div{
-    display: flex;
+    display:flex;
+    align-items: stretch;
     flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: flex-start;
+    inline-size: 100%;
 }
 
 footer img{
     max-width: 17px;
+    padding-right: 5px;
 }
+
 /*.footer-left {
         text-align: left;
     }
@@ -290,5 +288,11 @@ footer img{
             align-items: center;
             flex-direction: column;
         }
+    
+    @media screen and (max-width: 600px) {
+        footer div{
+            flex-direction: column;
+        }
+    }
 
     }

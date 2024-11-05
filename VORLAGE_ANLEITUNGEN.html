@@ -8,9 +8,14 @@
 
     <body>
         <nav>
-            <ul>
+            <div class="menu-icon" id="menuIcon">
+                &#9776;
+            </div>
+            <ul class="dropdown-menu" id="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pages/Anleitungen.html">Anleitungen</a>                    <ul>
+                <li class="dropdown">
+                    <a href="pages/Anleitungen.html">Anleitungen</a>
+                    <ul class="submenu">
                         <li><a href="pages/Lichtpult.html">Lichtpult</a></li>
                         <li><a href="pages/stagebox.html">Stagebox</a></li>
                     </ul>
@@ -18,6 +23,14 @@
                 <li><a href="pages/Techzyklopedie.html">Techzyklopedie</a></li>
                 <li><a href="pages/Pläne.html">Pläne</a></li>
             </ul>
+            <script>
+                const menuIcon = document.getElementById('menuIcon');
+                const menu = document.getElementById('menu');
+        
+                menuIcon.addEventListener('click', () => {
+                    menu.classList.toggle('show-menu');
+                });
+            </script>
         </nav>
         <h1>Stagebox</h1>
 
